@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+  <meta charset="UTF-8" />
+  <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PannonBeat Fesztivál 2025</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <title>PannonBeat 2025</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="container navbar-container">
+            <div class="logo">
+                <span class="logo-indigo">Pannon</span><span class="logo-orange">Beat</span>
+            </div>
+            <div class="nav-links">
+                <a href="#home">Főoldal</a>
+                <a href="#about">Esemény</a>
+                <a href="#program">Program</a>
+                <a href="#location">Helyszín</a>
+                <a href="#tickets">Jegyek</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <!-- Animated background -->
+        <div class="animated-bg">
+            <div class="animated-circle" style="width: 300px; height: 300px; background: #6366f1; top: 20%; left: 10%; animation-delay: 0s;"></div>
+            <div class="animated-circle" style="width: 400px; height: 400px; background: #f97316; top: 50%; left: 60%; animation-delay: -5s;"></div>
+            <div class="animated-circle" style="width: 250px; height: 250px; background: #ec4899; top: 70%; left: 30%; animation-delay: -10s;"></div>
+        </div>
+        
+        <!-- Statikus PannonBeat felirat -->
+        <h1 class="hero-title">
+            <span style="color: #818cf8;">Pannon</span><span style="color: #fb923c;">Beat</span>
+        </h1>
+        
+        <p class="hero-subtitle">Nyári Fesztivál</p>
+        <p class="hero-date">2025. július 25-27.</p>
+        
+        <!-- Countdown -->
+        <div class="countdown">
+            <div class="countdown-item">
+                <div class="countdown-number" id="days">00</div>
+                <div class="countdown-label">nap</div>
+            </div>
+            <div class="countdown-item">
+                <div class="countdown-number" id="hours">00</div>
+                <div class="countdown-label">óra</div>
+            </div>
+            <div class="countdown-item">
+                <div class="countdown-number" id="minutes">00</div>
+                <div class="countdown-label">perc</div>
+            </div>
+            <div class="countdown-item">
+                <div class="countdown-number" id="seconds">00</div>
+                <div class="countdown-label">mp</div>
+            </div>
+        </div>
+        
+        <div>
+            <a href="#tickets" class="btn btn-primary">Jegyek</a>
+            <a href="#about" class="btn btn-outline">Tudj meg többet</a>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-20 px-4 bg-slate-800">
+        <div class="max-w-6xl mx-auto">
+            <h2 class="text-3xl md:text-4xl font-bold mb-12 text-center">A <span class="text-indigo-400">Pannon</span><span class="text-orange-400">Beat</span> Fesztiválról</h2>
+            
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div>
+                    <p class="text-lg mb-6">A PannonBeat idén először rendezi meg a nyári fesztivált, ahol a zene, a közösség és a nyári hangulat találkozik a festői Velencei Ifjúsági táborban.</p>
+                    <p class="text-lg mb-6">Péntek estétől vasárnap reggelig várunk mindenkit, aki szeretne kikapcsolódni, új embereket megismerni és felejthetetlen élményeket szerezni a nyár közepén.</p>
+                    <p class="text-lg">Csatlakozz hozzánk július 25-27. között, és légy részese ennek a különleges eseménynek! Vasárnap a hivatalos program után közös strandolással zárjuk a hétvégét.</p>
+                </div>
+                <div class="flex justify-center">
+                    <div class="w-full max-w-md aspect-square rounded-xl overflow-hidden relative">
+                        <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg" class="w-full h-full">
+                            <defs>
+                                <linearGradient id="grad" x1="0%" y1="0%" x2="100%" y2="100%">
+                                    <stop offset="0%" style="stop-color:#6366f1;stop-opacity:1" />
+                                    <stop offset="100%" style="stop-color:#f97316;stop-opacity:1" />
+                                </linearGradient>
+                            </defs>
+                            <path fill="url(#grad)" d="M47.7,-57.2C59.9,-45.7,67.2,-29.4,69.4,-12.8C71.7,3.9,69,20.8,60.1,32.8C51.3,44.8,36.3,51.8,20.4,58.3C4.6,64.8,-12.1,70.8,-27.4,67.5C-42.7,64.2,-56.6,51.7,-64.4,36.3C-72.2,20.9,-73.9,2.7,-69.2,-13.2C-64.5,-29.1,-53.4,-42.7,-40.1,-53.9C-26.8,-65.2,-11.2,-74.1,3.2,-77.8C17.7,-81.5,35.4,-80,47.7,-57.2Z" transform="translate(100 100)" />
+                            <text x="50%" y="50%" dominant-baseline="middle" text-anchor="middle" fill="white" font-size="24" font-weight="bold">PannonBeat</text>
+                            <text x="50%" y="65%" dominant-baseline="middle" text-anchor="middle" fill="white" font-size="14">2025. július 25-27.</text>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+    </section>
+
+    <!-- Program Section -->
+    <section id="program" class="program">
+        <div class="container">
+            <h2 class="section-title">Program</h2>
+            
+            <div class="program-cards">
+                <!-- Day 1 -->
+                <div class="program-card">
+                    <div class="program-card-inner" id="card1">
+                        <div class="program-card-front">
+                            <div class="day-header">
+                                <div class="day-number" style="background-color: #6366f1;">1</div>
+                                <div class="day-info">
+                                    <h3>Péntek</h3>
+                                    <p style="color: #818cf8;">Július 25.</p>
+                                </div>
+                            </div>
+                            
+                            <div class="timeline">
+                                <div class="timeline-item" style="border-color: #818cf8;">
+                                    <p class="timeline-time" style="color: #818cf8;">18:00 - 19:00</p>
+                                    <h4 class="timeline-title">Érkezés, regisztráció</h4>
+                                    <p class="timeline-desc">Vendégek fogadása, szállás elfoglalása</p>
+                                </div>
+                                <div class="timeline-item" style="border-color: #818cf8;">
+                                    <p class="timeline-time" style="color: #818cf8;">19:00 - 20:30</p>
+                                    <h4 class="timeline-title">Nyitó ceremónia</h4>
+                                    <p class="timeline-desc">Köszöntő, program ismertetése</p>
+                                </div>
+                                <div class="timeline-item" style="border-color: #818cf8;">
+                                    <p class="timeline-time" style="color: #818cf8;">20:30 - 22:00</p>
+                                    <h4 class="timeline-title">Bográcsozás</h4>
+                                    <p class="timeline-desc">Közös vacsora a szabadban</p>
+                                </div>
+                                <div class="timeline-item" style="border-color: #818cf8;">
+                                    <p class="timeline-time" style="color: #818cf8;">22:00 - 24:00</p>
+                                    <h4 class="timeline-title">Campfire Est</h4>
+                                    <p class="timeline-desc">Tábortűz, akusztikus zene, beszélgetés</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="program-card-back">
+                            <div style="font-size: 48px; margin-bottom: 20px;">🔥</div>
+                            <h3 style="font-size: 24px; font-weight: bold; margin-bottom: 20px;">Péntek Esti Hangulat</h3>
+                            <p style="margin-bottom: 20px;">A fesztivál első estéje a közösségépítésről és az ismerkedésről szól. Hangulatos tábortűz mellett akusztikus zenével és közös énekléssel indítjuk a hétvégét.</p>
+                            <p style="margin-bottom: 20px;">A bográcsban készült vacsora után közös játékokkal és beszélgetéssel folytatjuk az estét.</p>
+                            <p style="font-size: 14px; color: rgba(255, 255, 255, 0.7);">Ne hagyd ki az első este varázsát!</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Day 2 -->
+                <div class="program-card">
+                    <div class="program-card-inner" id="card2">
+                        <div class="program-card-front">
+                            <div class="day-header">
+                                <div class="day-number" style="background-color: #fb923c;">2</div>
+                                <div class="day-info">
+                                    <h3>Szombat</h3>
+                                    <p style="color: #fb923c;">Július 26.</p>
+                                </div>
+                            </div>
+                            
+                            <div class="timeline">
+                                <div class="timeline-item" style="border-color: #fb923c;">
+                                    <p class="timeline-time" style="color: #fb923c;">10:00 - 13:00</p>
+                                    <h4 class="timeline-title">Délelőtti programok</h4>
+                                    <p class="timeline-desc">Meglepetés</p>
+                                </div>
+                                <div class="timeline-item" style="border-color: #fb923c;">
+                                    <p class="timeline-time" style="color: #fb923c;">14:00 - 19:00</p>
+                                    <h4 class="timeline-title">Délutáni programok</h4>
+                                    <p class="timeline-desc">Meglepetés</p>
+                                </div>
+                                <div class="timeline-item" style="border-color: #fb923c;">
+                                    <p class="timeline-time" style="color: #fb923c;">20:00 - 04:00</p>
+                                    <h4 class="timeline-title">Esti buli</h4>
+                                    <p class="timeline-desc">Koncertek, DJ-k, tánc hajnalig</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="program-card-back">
+                            <div style="font-size: 48px; margin-bottom: 20px;">🎵</div>
+                            <h3 style="font-size: 24px; font-weight: bold; margin-bottom: 20px;">Szombati Meglepetés</h3>
+                            <p style="margin-bottom: 20px;">A szombati nap tele van izgalmas meglepetésekkel! Interaktív programok és sportesemények várnak rád.</p>
+                            <p style="margin-bottom: 20px;">Az este folyamán pedig fergeteges buli veszi kezdetét, ahol hazai DJ-k és előadók gondoskodnak a hangulatról hajnalig.</p>
+                            <p style="font-size: 14px; color: rgba(255, 255, 255, 0.7);">A részletes program hamarosan...</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Day 3 -->
+                <div class="program-card">
+                    <div class="program-card-inner" id="card3">
+                        <div class="program-card-front">
+                            <div class="day-header">
+                                <div class="day-number" style="background-color: #0ea5e9;">3</div>
+                                <div class="day-info">
+                                    <h3>Vasárnap</h3>
+                                    <p style="color: #0ea5e9;">Július 27.</p>
+                                </div>
+                            </div>
+                            
+                            <div class="timeline">
+                                <div class="timeline-item" style="border-color: #0ea5e9;">
+                                    <p class="timeline-time" style="color: #0ea5e9;">09:00 - 10:30</p>
+                                    <h4 class="timeline-title">Reggeli</h4>
+                                    <p class="timeline-desc">Közös reggeli, beszélgetés</p>
+                                </div>
+                                <div class="timeline-item" style="border-color: #0ea5e9;">
+                                    <p class="timeline-time" style="color: #0ea5e9;">10:30 - 12:00</p>
+                                    <h4 class="timeline-title">Záró esemény</h4>
+                                    <p class="timeline-desc">Élménybeszámolók, búcsú</p>
+                                </div>
+                                <div class="timeline-item" style="border-color: #0ea5e9;">
+                                    <p class="timeline-time" style="color: #0ea5e9;">12:00 - 18:00</p>
+                                    <h4 class="timeline-title">Strandolás</h4>
+                                    <p class="timeline-desc">Közös fürdőzés a Velencei-tónál</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="program-card-back">
+                            <div style="font-size: 48px; margin-bottom: 20px;">🏖️</div>
+                            <h3 style="font-size: 24px; font-weight: bold; margin-bottom: 20px;">Vasárnapi Lazulás</h3>
+                            <p style="margin-bottom: 20px;">A fesztivál utolsó napján közösen értékeljük a hétvégét, megosztjuk élményeinket és emlékeinket.</p>
+                            <p style="margin-bottom: 20px;">A hivatalos program után pedig irány a Velencei-tó! Közös strandolással, fürdőzéssel és napozással zárjuk a hétvégét.</p>
+                            <p style="font-size: 14px; color: rgba(255, 255, 255, 0.7);">Hozz törölközőt és naptejet!</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Location Section -->
+    <section id="location" class="location">
+        <div class="container">
+            <h2 class="section-title">Helyszín</h2>
+            
+            <div class="location-content">
+                <div class="location-info">
+                    <h3>Velencei Ifjúsági Tábor</h3>
+                    <p>A Velencei Ifjúsági Tábor tökéletes helyszínt biztosít a PannonBeat fesztiválnak. A tábor nincs közvetlenül a vízparton, de csak rövid sétára található a Velencei-tótól.</p>
+                    <p>A tábor területén több színpad, pihenőhelyek, étkezési lehetőségek és szállás is rendelkezésre áll.</p>
+                    
+                    <div class="location-address">
+                        <h4 style="font-weight: bold; margin-bottom: 10px;">Cím:</h4>
+                        <p>Velencei Ifjúsági Tábor, Velence Régiposta u. 9, 2481</p>
+                    </div>
+                    
+                    <div>
+                        <div class="location-feature">
+                            <div class="location-icon">🚂</div>
+                            <p>Vonattal könnyen megközelíthető</p>
+                        </div>
+                        <div class="location-feature">
+                            <div class="location-icon">🚗</div>
+                            <p>Parkolási lehetőség a helyszínen</p>
+                        </div>
+                        <div class="location-feature">
+                            <div class="location-icon">🏊</div>
+                            <p>Strand 10 perc sétára</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="location-map">
+                    <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg" width="100%" height="100%">
+                        <!-- Land -->
+                        <rect x="0" y="0" width="200" height="130" fill="#84cc16" opacity="0.5" />
+                        
+                        <!-- Water -->
+                        <rect x="0" y="130" width="200" height="70" fill="#0ea5e9" opacity="0.7" />
+                        
+                        <!-- Roads -->
+                        <line x1="0" y1="80" x2="200" y2="80" stroke="#e2e8f0" stroke-width="5" />
+                        <line x1="100" y1="0" x2="100" y2="130" stroke="#e2e8f0" stroke-width="3" />
+                        
+                        <!-- Location marker -->
+                        <circle cx="100" cy="60" r="8" fill="#ef4444" />
+                        <circle cx="100" cy="60" r="12" fill="#ef4444" opacity="0.5">
+                            <animate attributeName="r" values="8;14;8" dur="2s" repeatCount="indefinite" />
+                            <animate attributeName="opacity" values="0.7;0.3;0.7" dur="2s" repeatCount="indefinite" />
+                        </circle>
+                        
+                        <!-- Beach marker -->
+                        <circle cx="100" cy="120" r="6" fill="#f59e0b" />
+                        
+                        <!-- Text -->
+                        <text x="100" y="150" text-anchor="middle" fill="white" font-size="8">Velencei-tó</text>
+                        <text x="100" y="45" text-anchor="middle" fill="white" font-size="6" font-weight="bold">Velencei Ifjúsági Tábor</text>
+                        <text x="100" y="110" text-anchor="middle" fill="white" font-size="6">Strand</text>
+                    </svg>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tickets Section -->
+    <section id="tickets" class="tickets">
+        <div class="container">
+            <h2 class="section-title">Jegyek</h2>
+            
+            <div class="ticket-card">
+                <h3 class="ticket-title">PannonBeat Fesztivál Belépő</h3>
+                <p>Teljes hétvégére szóló belépő, szállással együtt</p>
+                
+                <div class="ticket-price">20.000 Ft</div>
+                
+                <div class="ticket-features">
+                    <div class="ticket-feature">
+                        <span class="ticket-check">✓</span>
+                        <span>Belépés minden programra</span>
+                    </div>
+                    <div class="ticket-feature">
+                        <span class="ticket-check">✓</span>
+                        <span>Szállás a tábor területén</span>
+                    </div>
+                    <div class="ticket-feature">
+                        <span class="ticket-check">✓</span>
+                        <span>Teljes ellátás (reggeli, ebéd, vacsora)</span>
+                    </div>
+                    <!--<div class="ticket-feature">
+                        <span class="ticket-check">✓</span>
+                        <span>Egyedi PannonBeat póló</span>
+                    </div> -->
+                </div>
+                
+                <div class="ticket-counter">
+                    <div class="counter-header">
+                        <span>Jegyek elérhetősége:</span>
+                        <span style="font-weight: bold;">10%</span>
+                    </div>
+                    <div class="progress-bar">
+                        <div class="progress" id="ticket-progress"></div>
+                    </div>
+                    <p style="font-size: 14px; margin-top: 10px; color: rgba(255, 255, 255, 0.7);">Még 90 jegy érhető el</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <span class="logo-indigo">Pannon</span><span class="logo-orange">Beat</span>
+                </div>
+                <div class="social-links">
+                    <a href="#" class="social-link">📱</a>
+                    <a href="#" class="social-link">📷</a>
+                    <a href="#" class="social-link">📺</a>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <div class="music-wave">
+                    <div class="wave-bar" style="height: 10px; animation-delay: 0s;"></div>
+                    <div class="wave-bar" style="height: 15px; animation-delay: 0.1s;"></div>
+                    <div class="wave-bar" style="height: 20px; animation-delay: 0.2s;"></div>
+                    <div class="wave-bar" style="height: 25px; animation-delay: 0.3s;"></div>
+                    <div class="wave-bar" style="height: 30px; animation-delay: 0.4s;"></div>
+                    <div class="wave-bar" style="height: 25px; animation-delay: 0.5s;"></div>
+                    <div class="wave-bar" style="height: 20px; animation-delay: 0.6s;"></div>
+                    <div class="wave-bar" style="height: 15px; animation-delay: 0.7s;"></div>
+                    <div class="wave-bar" style="height: 10px; animation-delay: 0.8s;"></div>
+                </div>
+                <p>&copy; 2025 PannonBeat Fesztivál. Minden jog fenntartva.</p>
+                <p style="margin-top: 10px;">Kapcsolat: Keresd a szervezőket!</p>
+            </div>
+        </div>
+    </footer>
+
+<script src="script.js"></script>
+</body>
+</html>
