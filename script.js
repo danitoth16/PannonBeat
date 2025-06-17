@@ -29,7 +29,7 @@
         
         // Ticket progress animation
         setTimeout(() => {
-            document.getElementById('ticket-progress').style.width = '12%';
+            document.getElementById('ticket-progress').style.width = '14%';
         }, 500);
         
         // Smooth scrolling
